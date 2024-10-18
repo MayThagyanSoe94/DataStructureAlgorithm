@@ -9,6 +9,7 @@ package com.mtgs.datastructurealgorithm.array;
  * @author May Thagyan
  */
 public class Array {
+
     int size;
     int[] items;
 
@@ -16,15 +17,15 @@ public class Array {
         this.size = size;
         this.items = new int[size];
     }
-    
-    void put(int index,int value){
+
+    void put(int index, int value) {
         this.items[index] = value;
     }
-    
-    int get(int index){
+
+    int get(int index) {
         return this.items[index];
     }
-    
+
     public static void main(String[] args) {
         Array arr = new Array(5);
         arr.items[0] = 20;
