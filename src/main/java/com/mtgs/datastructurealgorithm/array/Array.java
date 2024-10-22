@@ -11,9 +11,16 @@ package com.mtgs.datastructurealgorithm.array;
 public class Array {
 
     int size;
-    int[] items;
+    protected int[] items;
 
-    public Array(int size) {
+    public Array() {
+    }
+
+    Array(int[] items) {
+        this.items = items;
+    }
+
+    Array(int size) {
         this.size = size;
         this.items = new int[size];
     }
