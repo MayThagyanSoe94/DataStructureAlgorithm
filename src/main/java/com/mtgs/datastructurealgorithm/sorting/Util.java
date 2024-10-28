@@ -22,7 +22,7 @@ public class Util {
         return arr;
     }
 
-    static void print(String message, int[] arr) {
+    public static void print(String message, int[] arr) {
         System.out.print(message);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + ", ");
@@ -30,7 +30,11 @@ public class Util {
         System.out.println("");
     }
 
-    static boolean isArraySorted(int[] arr) {
+    public static void printIndex(String message, int i) {
+        System.out.println(message + " " + i);
+    }
+
+    public static boolean isArraySorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
                 return false;
