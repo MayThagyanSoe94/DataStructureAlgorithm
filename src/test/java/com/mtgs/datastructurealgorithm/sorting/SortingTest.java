@@ -39,4 +39,13 @@ public class SortingTest {
 //        Util.print("Bubble Array Sorted >>> ", arr);
 //        assertTrue(Util.isArraySorted(arr));
 //    }
+    
+    @Test
+    public void insertionSortTest(){
+        int arr[] = new int[]{8, 3, 5, 7, 1};
+        Sortable algo = new InsertionSort();
+        algo.sort(arr);
+        Util.print("Insertion Array Sorted >>> ", arr);
+        assertTrue(Util.isArraySorted(arr));
+    }
 }
